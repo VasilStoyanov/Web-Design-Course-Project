@@ -52,17 +52,6 @@
 	<footer>
 		Copyright &copy; 2015 Vasil Stoyanov. All rights reserved.
 	</footer>
-	<script>
-		var pressedTimes = 0;
-		function sayHello() {
-			pressedTimes += 1;
-			if(pressedTimes >= 3) {
-				this.innerText = 'Stop pressing me NOOB';
-			}
-			return;
-		}
-
-		document.getElementById('home').addEventListener('click', sayHello);
-	</script>
+    <script src="../scripts/HomeButtonNotification.js"></script>
 </body>
 </html>
