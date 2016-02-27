@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link href="../styles/firstProblem-styles.css" rel="stylesheet" />
+	<link href="../styles/toastr.css" rel="stylesheet"/>
+	<title>JavaScript - The next big thing</title>
+	<meta charset="utf-8">
+	<script src="../scripts/jQuery.js"></script>
+	<script src="../scripts/toastr.min.js"></script>
+	<script src="../scripts/scrollButton.js"></script>
+	<script src="../scripts/problemOneSolutionController.js"></script>
+</head>
+
+<body>
+	<header>
+		<img id="javascript-logo" src="../images/HomeImages/jsLogo.png" alt="#" />
+		<h1>JavaScript</h1>
+		<h2>Курсова задача по дисциплината "Уеб дизайн" на &lt;<span class="author-color">Васил</span>&gt;&lt;/<span class="author-color">Стоянов</span>&gt;</h2>
+	</header>
+	<nav class="navigation">
+		<table class="table-nav">
+			<tr>
+				<td><a href="home.html">Начало</a></td>
+				<td><a href="firstProblem.html">Задача</a></td>
+				<td><a href="secondProblem.html">Задача 2</a></td>
+				<td><a id="magic" href="#">Натисни за магия</a></td>
+			</tr>
+		</table>
+	</nav>
+	<div class="card-style white">
+		<h2>Задача "Магически сили"</h2>
+		<div>
+			Числата имат магически сили! Те могат да се трансформират. Една трансформация се прави, като се замести:
+			<ul>
+				<li>
+					Всяка 0 - с абсолютната разлика на съседните му числа.
+				</li>
+				<li>
+					Всички четни числа - с по-голямото от съседните му числа.
+				</li>
+				<li>
+					Всяка 1 - със сумата на съседните числа.
+				</li>
+				<li>
+					Всички други нечетни числа - с по-малкото от съседните му числа.
+				</li>
+			</ul>
+			<span class="bold">Най-дясното и ляво число са съседи.</span>
+			<br /> К-сума на редица е сумата на числата след К трансформации на редицата.
+			<br /> Задачата Ви е да намерите К-сума на дадена редица.
+			<h2 class="message">Вход:</h2>
+			<div>
+				Входните данни са дадени като параметър - масив от низове.
+				<br /> На първия ред от входа ще получите числата N и K отделени
+				 с интервал. На втория ред от входа са N числа – редицата.
+			</div>
+			<h2 class="message">Изход:</h2>
+			<div>
+				Изходът трябва да бъде върнат от функцията ( return [отговор];) )
+				<br /> Изкарайте K-сумата на дадената редица.
+			</div>
+			<h2 class="message">Ораничения</h2>
+			<ul id="bugged">
+				<li>3 &lt= N &lt= 100</li>
+				<li>
+					0 &lt= K &lt= 20
+				</li>
+				<li>
+					Първоначално, всяко число в редицата е единствено число - положително цяло число.
+				</li>
+				<li>
+					Позволено време за работа на програмата Ви: 0.3 секунди.
+				</li>
+				<li>Позволена памет: 16 MB</li>
+			</ul>
+			<h2 class="message">Примерен вход (нулев тест):</h2>
+			<div>
+				5 1 <br />
+				9 0 2 4 1
+			</div>
+			<h2 class="message">Примерен изход (нулев тест):</h2>
+			<div>
+				26
+			</div>
+			<h2 class="message">Обяснение:</h2>
+			<div>
+				9 0 2 4 1<br />
+				става:<br />
+				0 7 4 2 13
+			</div>
+			<h2 class="message">Примерен код за решение:</h2>
+			<div id="sampleCode">
+						<span class="blue">function</span> solve(input) {<br />
+						<span class="blue">var</span> nk = input[0].split(' ').map(Number),
+						<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsps = input[1].split(' ').map(Number),
+						<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp result;
+						<br />
+						<br />
+						<span class="green">&nbsp&nbsp// Вашето решение тук</span>
+						<br />&nbsp&nbsp return result;
+						<br />}
+			</div>
+			<h2 class="message">Изпращане на решение:</h2>
+			<textarea id="codeSolution"></textarea>
+			<div id="send-solution">Изпрати</div>
+			<div id="back-to-top">Отиди нагоре</div>
+		</div>
+	</div>
+	<footer>
+		Copyright &copy; 2015 Vasil Stoyanov. All rights reserved.
+	</footer>
+</body>
+
+</html>
